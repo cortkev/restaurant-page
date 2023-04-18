@@ -1,22 +1,28 @@
 import _ from 'lodash';
+import './style.css';
+import homePage from './home';
 
-// console.log('hello');
+function tabs(){
+    const tabBar = document.createElement('div');
+    tabBar.classList.add('bar');
 
-//  function component() {
-//    const element = document.createElement('div');
+    const tab1 = document.createElement('button');
+    tab1.innerHTML = 'Home';
+    tab1.classList.add('tabs');
+    const tab2 = document.createElement('button');
+    tab2.innerHTML = 'Menu';
+    tab2.classList.add('tabs');
+    const tab3 = document.createElement('button');
+    tab3.innerHTML = 'Contact';
+    tab3.classList.add('tabs');
 
-//   // Lodash, now imported by this script
-//    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    tabBar.appendChild(tab1);
+    tabBar.appendChild(tab2);
+    tabBar.appendChild(tab3);
 
-//    return element;
-//  }
+    return tabBar;
+}
 
-//  document.body.appendChild(component());
+document.body.appendChild(tabs());
 
-
- const contentDiv = document.getElementById('content');
- const header = document.createElement('h1');
-
- header.innerHTML = _.join(['Hello', 'header'], ' ');
-
- contentDiv.appendChild(header);
+document.body.appendChild(homePage());
