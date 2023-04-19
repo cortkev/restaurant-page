@@ -16,12 +16,13 @@ export default function homePage(){
 
     contentDiv.appendChild(titleDiv);
 
+    const headlineDiv = document.createElement('div');
+    headlineDiv.classList.add('headlineDiv');
     const headline = document.createElement('p');
     headline.innerHTML = "Experience the best dining in town at our restaurant. We offer a unique blend of flavors and ingredients that will tantalize your taste buds. Our expert chefs prepare each dish with care and attention to detail, ensuring that every meal is a work of art.";
-    contentDiv.appendChild(headline);
-
+    headlineDiv.appendChild(headline);
+    contentDiv.appendChild(headlineDiv);
     
-
     return contentDiv;
     
 }

@@ -7,6 +7,7 @@
 *{
     padding: 0;
     margin: 0;
+    background-color: #fbefff;
 }
 
 #content{
@@ -14,13 +15,18 @@
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
+    border: 1px dotted red;
+    align-items: center;
+    height: 100vh;
+    margin: 50px;
+    
 }
 .logo{
     height: 80px;
 }
 
 .tabs{
-    background-color: red;
+    background-color: #2a095f;
     width: 100px;
     height: 50px;
     border-style: none;
@@ -47,4 +53,28 @@
     font-family: 'forknife';
     font-size: 2.5rem;
     
+}
+
+.headlineDiv{
+    display: flex;
+    width: 600px;
+    min-height: 50vh;
+    min-width: 600px;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./wall.png');
+    background-size: cover;
+    background-position: center;
+    border: 3px solid orange;
+    background-color: black;
+}
+
+p{
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    word-wrap: break-word;
 }
