@@ -7,7 +7,7 @@
 *{
     padding: 0;
     margin: 0;
-    background-color: #fbefff;
+    background-color: #ddb1ff;
 }
 
 #content{
@@ -15,10 +15,13 @@
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    border: 1px dotted red;
+    border: 1px solid black;
+    border-radius: 50px;
     align-items: center;
+    align-self: center;
     height: 100vh;
-    margin: 50px;
+    margin: 100px 200px 100px 200px;
+    min-width: auto;
     
 }
 .logo{
@@ -33,6 +36,8 @@
     cursor: pointer;
     font-weight: bold;
     color: white;
+    font-family: 'forknife';
+    font-size: 25px;
 }
 
 .bar{
@@ -55,18 +60,19 @@
     
 }
 
+/* fix the sizing of the div */
+
 .headlineDiv{
     display: flex;
     width: 600px;
     min-height: 50vh;
-    min-width: 600px;
+    min-width: auto;
     align-items: center;
     justify-content: center;
     background-image: url('./wall.png');
     background-size: cover;
     background-position: center;
     border: 3px solid orange;
-    background-color: black;
 }
 
 p{
@@ -77,4 +83,11 @@ p{
     font-size: 30px;
     font-weight: bold;
     word-wrap: break-word;
+}
+
+body {
+    background-image: url('./llama.png');
+    background-repeat: repeat;
+    background-size: 70px;
+    background-position: center;
 }
