@@ -139,5 +139,9 @@ p{
   }
   
   .image{
-    
+     height: 200px;
+  }
+
+  .descriptions{
+    font-size: 22px;
   }

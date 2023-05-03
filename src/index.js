@@ -2,6 +2,7 @@ import _ from 'lodash';
 import './style.css';
 import homePage from './home';
 import menu from './menu';
+import contact from './contact';
 
 function tabs(){
     const tabBar = document.createElement('div');
@@ -51,4 +52,5 @@ function emptyDiv() {
   button3.addEventListener('click', function() {
     // Code to execute when button3 is clicked
     emptyDiv()
+    document.body.appendChild(contact());
   });

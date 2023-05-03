@@ -1,5 +1,6 @@
 import Icon from './fork-and-knife.svg';
 import Img from './durr-burger.jpg';
+import Juice from './slurp-juice.png';
 
 export default function menu(){
     const contentDiv = document.getElementById('content');
@@ -17,13 +18,33 @@ export default function menu(){
     titleDiv.appendChild(header);
     contentDiv.appendChild(titleDiv);
 
-    const headlineDiv = document.createElement('div');
-    headlineDiv.classList.add('headlineDiv');
+    const burgerDiv = document.createElement('div');
+    burgerDiv.classList.add('headlineDiv');
+
+    const burgerDescription = document.createElement('p');
+    burgerDescription.classList.add('descriptions');
+    burgerDescription.innerHTML = 'Juicy beef patty with melted cheese, crispy lettuce, and tangy pickles, all served on a fresh sesame seed bun. A classic burger that never disappoints!';
+    burgerDiv.appendChild(burgerDescription);
+
     const myImg = new Image();
     myImg.src = Img;
     myImg.classList.add("image");
-    headlineDiv.appendChild(myImg);
-    contentDiv.appendChild(headlineDiv);
+    burgerDiv.appendChild(myImg);
+    contentDiv.appendChild(burgerDiv);
+
+    const drinkDiv = document.createElement('div');
+    drinkDiv.classList.add('headlineDiv');
+
+    const slurpDescription = document.createElement('p');
+    slurpDescription.classList.add('descriptions');
+    slurpDescription.innerHTML = 'Replenish your health and shield with our legendary Slurp Juice. The perfect refreshment for any battle!';
+    drinkDiv.appendChild(slurpDescription);
+
+    const juiceImg = new Image();
+    juiceImg.src = Juice;
+    juiceImg.classList.add("image");
+    drinkDiv.appendChild(juiceImg);
+    contentDiv.appendChild(drinkDiv);
 
     return contentDiv;
 }

@@ -53,14 +53,11 @@ export default function homePage(){
     const restaurantInfo = document.createElement('ul');
     restaurantInfo.classList.add('information');
     const location = document.createElement('li');
-    location.textContent = '123 Main St, Anytown USA';
+    location.textContent = 'Location:';
     restaurantInfo.appendChild(location);
-    const phone = document.createElement('li');
-    phone.textContent = 'Phone: 555-1234';
-    restaurantInfo.appendChild(phone);
-    const email = document.createElement('li');
-    email.textContent = 'Email: info@forknife.com';
-    restaurantInfo.appendChild(email);
+    const address = document.createElement('li');
+    address.textContent = '123 Main St, Anytown USA';
+    restaurantInfo.appendChild(address);
     
     infoDiv.appendChild(restaurantInfo);
     contentDiv.appendChild(infoDiv);
